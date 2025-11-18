@@ -1,0 +1,439 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="WebForm1.aspx.vb" Inherits="FeedbackProject.WebForm1" %>
+
+<!DOCTYPE html>
+
+<htmlxmlns="http://www.w3.org/1999/xhtml>
+<head runat="server">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+ 
+  <meta charset="utf-8" />
+  <title>Feedback Form</title>
+  <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="../assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+  <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="../assets/styles/app.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="../assets/styles/font.css" type="text/css" />
+ 
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+              <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <!-- aside -->
+ 
+  <!-- / -->
+  
+  <!-- content -->
+  <div class="padding">
+  <div class="Header">
+    
+      <asp:Image ID="Image1" runat="server" ImageUrl="~/html/new-sriher-logo.png" style="width:1500px;height:130px"/>
+ <br />
+      <center><b>
+          <asp:Label ID="Label14" runat="server" Text=""></asp:Label></b>
+      </center>
+   
+   
+    
+  </div>
+  </div>
+
+  </div>
+
+  <div id="content" class="app-content box-shadow-z0" role="main">
+    <div class="padding">
+      <div class="box">
+        <div class="form-group">
+          <div class="padding">
+          <h5><B>Instructor has covered the syllabus </B></h5>
+          <div class="row text-center">
+          <div class="padding">
+              <asp:Label ID="Label1" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+          &nbsp;<asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                  <asp:ListItem>Yes</asp:ListItem>
+                  <asp:ListItem>No</asp:ListItem>
+              </asp:RadioButtonList>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+    
+        <div class="form-group">
+          <div class="col-sm-3">
+            <div class="box-color text-color pos-rlt">
+              <span class="arrow bottom b-black"></span>
+              <div class="box-body" data-aos="fade-down">
+                <h4><B>Faculty Teaching</B></h4>
+              </div>
+            </div>
+          </div>
+          
+<div class="padding">
+    <h5>The course instructor was well organized and prepared</h5>
+    <div class =" padding"></div>
+     <div class="row text-center">
+   <div class="padding">
+       <asp:Label ID="Label2" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+        <asp:RadioButtonList ID="RadioButtonList2" runat="server" CssClass="custom-radio-list"> 
+            <asp:ListItem>Strongly Agree</asp:ListItem>
+            <asp:ListItem>Agree</asp:ListItem>
+            <asp:ListItem>Moderately Agree</asp:ListItem>
+            <asp:ListItem>Disagree</asp:ListItem>
+            <asp:ListItem>Strongly Disagree</asp:ListItem>
+        </asp:RadioButtonList>
+    </div>
+</div>
+
+        
+         <div class="padding"data-aos="fade-down">
+            <div class="padding">
+          <h5>The course instructor communicated clearly, used class time efficiently and taught well</h5>
+          <div class="row text-center">
+            <div class="padding">
+                <asp:Label ID="Label3" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                <asp:RadioButtonList ID="RadioButtonList3" runat="server">
+                    <asp:ListItem>Strongly Agree</asp:ListItem>
+                    <asp:ListItem>Agree</asp:ListItem>
+                    <asp:ListItem>Modertly Agree</asp:ListItem>
+                    <asp:ListItem>Disagree</asp:ListItem>
+                    <asp:ListItem>Strongly Agree</asp:ListItem>
+                </asp:RadioButtonList>
+                </div>
+&nbsp;</div>
+      </div>
+         </div>
+         <div class="padding"data-aos="fade-down">
+          <h5>The instructor encouraged discussions and responded to questions</h5>
+          <div class="row text-center">
+            <div class="padding">
+                <asp:Label ID="Label4" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                <asp:RadioButtonList ID="RadioButtonList4" runat="server">
+                    <asp:ListItem>Strongly Agree</asp:ListItem>
+                    <asp:ListItem>Agree</asp:ListItem>
+                    <asp:ListItem>Modertly Agree</asp:ListItem>
+                    <asp:ListItem>Disagree</asp:ListItem>
+                    <asp:ListItem>Strongly Disagree</asp:ListItem>
+                </asp:RadioButtonList>
+&nbsp;</div>
+      </div>
+         </div>
+         <div class="padding"data-aos="fade-down">
+          <h5>The instructor showed an interest in helping students learn and approachable for any help</h5>
+          <div class="row text-center">
+            <div class="padding">
+                 <asp:Label ID="Label5" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                <asp:RadioButtonList ID="RadioButtonList5" runat="server">
+                    <asp:ListItem>Strongly Agree</asp:ListItem>
+                    <asp:ListItem>Agree</asp:ListItem>
+                    <asp:ListItem>Modertly Agree</asp:ListItem>
+                    <asp:ListItem>Disagree</asp:ListItem>
+                    <asp:ListItem>Strongly Disagree</asp:ListItem>
+                </asp:RadioButtonList>
+&nbsp;</div>
+      </div>
+         </div>     
+       
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <div class="box-color text-color pos-rlt">
+              <span class="arrow bottom b-black"></span>
+              <div class="box-body">
+                <h4><B>Course Material</B></h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="padding"data-aos="fade-down">
+           <h5>The course was organized in a manner that helped me to understand the underlying concepts</h5>
+           <div class="row text-center">
+             <div class="padding">
+                 <asp:Label ID="Label6" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+           &nbsp;<asp:RadioButtonList ID="RadioButtonList6" runat="server">
+                     <asp:ListItem>Strongly Agree</asp:ListItem>
+                     <asp:ListItem>Agree</asp:ListItem>
+                     <asp:ListItem>Modertly Agree</asp:ListItem>
+                     <asp:ListItem>Disagree</asp:ListItem>
+                     <asp:ListItem>Strongly Disagree</asp:ListItem>
+                 </asp:RadioButtonList>
+         </div>
+       </div>
+          </div>
+
+          <div class="padding" data-aos="fade-down">
+            <h5>Complete course materials are available in Google Classroom</h5>
+            <div class="row text-center">
+              <div class="padding">
+                   <asp:Label ID="Label7" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                  <asp:RadioButtonList ID="RadioButtonList7" runat="server">
+                      <asp:ListItem>Strongly Agree</asp:ListItem>
+                      <asp:ListItem>Agree</asp:ListItem>
+                      <asp:ListItem>Modertly Agree</asp:ListItem>
+                      <asp:ListItem>Disagree</asp:ListItem>
+                      <asp:ListItem>Strongly Disagree</asp:ListItem>
+                  </asp:RadioButtonList>
+&nbsp;</div>
+        </div>
+           </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <div class="box-color text-color pos-rlt">
+              <span class="arrow bottom b-black"></span>
+              <div class="box-body">
+                <h4><B>Exam / Assessment</B></h4>
+              </div>
+            </div>
+          </div>
+          <div class="padding"data-aos="fade-down">
+            <h5>Exams were based on material covered in assignments and lectures</h5>
+            <div class="row text-center">
+              <div class="padding" data-aos="fade-down">
+                  <asp:Label ID="Label8" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                  <asp:RadioButtonList ID="RadioButtonList8" runat="server">
+                      <asp:ListItem>Strongly Agree</asp:ListItem>
+                      <asp:ListItem>Agree</asp:ListItem>
+                      <asp:ListItem>Modertly Agree</asp:ListItem>
+                      <asp:ListItem>Disagree</asp:ListItem>
+                      <asp:ListItem>Strongly Disagree</asp:ListItem>
+                  </asp:RadioButtonList>
+&nbsp;</div>
+        </div>
+           </div>
+           <div class="padding" data-aos="fade-down">
+            <h5>The assessment is challenging & helped to put the concepts into practice</h5>
+            <div class="row text-center">
+              <div class="padding" data-aos="fade-down">
+                  <asp:Label ID="Label9" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                  <asp:RadioButtonList ID="RadioButtonList9" runat="server">
+                      <asp:ListItem>Strongly Agree</asp:ListItem>
+                      <asp:ListItem>Agree</asp:ListItem>
+                      <asp:ListItem>Modertly Agree</asp:ListItem>
+                      <asp:ListItem>Disagree</asp:ListItem>
+                      <asp:ListItem>Strongly Disagree</asp:ListItem>
+                  </asp:RadioButtonList>
+&nbsp;</div>
+        </div>
+           </div>
+           <div class="padding" data-aos="fade-down">
+            <h5>Quality of questions or problems raised by the instructor was</h5>
+            <div class="row text-center">
+              <div class="padding" data-aos="fade-down">
+                  <asp:Label ID="Label10" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                  <asp:RadioButtonList ID="RadioButtonList10" runat="server">
+                      <asp:ListItem>V.Good</asp:ListItem>
+                      <asp:ListItem>Good</asp:ListItem>
+                      <asp:ListItem>Fair</asp:ListItem>
+                      <asp:ListItem>Poor</asp:ListItem>
+                      <asp:ListItem>V.Poor</asp:ListItem>
+                  </asp:RadioButtonList>
+&nbsp;</div>
+        </div>
+           </div>
+
+
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <div class="box-color text-color pos-rlt">
+              <span class="arrow bottom b-black"></span>
+              <div class="box-body" data-aos="fade-down">
+                <h4><B>Effectiveness of Instructor</B></h4>
+              </div>
+            </div>
+          </div>
+          
+              <div class="padding" data-aos="fade-down">
+                  <h5>The answer key of CA is discussed immediately after CA 3 - exam</h5>
+                <div class="row text-center">
+                  <div class="padding" >
+                      <asp:Label ID="Label11" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+                      <asp:RadioButtonList ID="RadioButtonList11" runat="server">
+                          <asp:ListItem>Discussed Completly</asp:ListItem>
+                          <asp:ListItem>Discussed Late</asp:ListItem>
+                          <asp:ListItem>Partially Discussed</asp:ListItem>
+                          <asp:ListItem>Not Discussed</asp:ListItem>
+                      </asp:RadioButtonList>
+&nbsp;</div>
+        </div>
+                  </div>
+           </div>
+           <div class="padding" data-aos="fade-down">
+            <h5>Instructor's enthusiasm was:</h5>
+            <div class="row text-center">
+              <div class="padding"data-aos="fade-down">
+                  <asp:Label ID="Label12" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label> 
+                  <asp:RadioButtonList ID="RadioButtonList12" runat="server" CssClass="inline-rb">
+                     
+    <asp:ListItem>V.Good</asp:ListItem>
+    <asp:ListItem>Good</asp:ListItem>
+    <asp:ListItem>Fair</asp:ListItem>
+    <asp:ListItem>Poor</asp:ListItem>
+    <asp:ListItem>V.Poor</asp:ListItem>
+</asp:RadioButtonList>
+
+                 
+                  
+&nbsp;</div>
+        </div>
+           </div>
+          
+
+           
+        </div>
+        <div class="padding"></div>
+        <div class="form-group row"></div>
+          <div class="padding">
+
+          <label class="col-sm-2 form-control-label"><h4><B>Any Suggestion For Improvement</B></h4></label></div>
+          
+          <div class="col-sm-10">
+              <asp:Label ID="Label13" runat="server" Text="This field is missing" ForeColor="Red" Visible="False"></asp:Label>
+              <asp:TextBox ID="TextBox1" runat="server" Height="133px" TextMode="MultiLine" Width="1214px"></asp:TextBox>
+&nbsp;<br />
+          </div>
+        </div>
+        
+      </div>
+            
+      
+      
+
+
+
+    
+      <center>
+   <asp:Button ID="Button2" runat="server" style="margin-left: 0px" Text="SUBMIT" CssClass="goto" />
+          
+          
+          <style>
+
+
+    /* Custom styling for the label */
+    .custom-label {
+        color: red; /* Set the text color to red */
+        display: block; /* Ensure the label appears on a new line */
+        margin-top: 10px; /* Adjust the top margin according to your design */
+    }
+              .goto{
+  background: #000000;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+  
+}
+.goto:hover{
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  color:black;
+}
+          </style>
+      </center>
+      </div>
+      
+    </div>
+    
+    
+    <div class="app-footer">
+      <div class="p-2 text-xs">
+          <div class="pull-right text-muted py-1">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+        </div>
+        <div class="nav">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+    <div ui-view class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+<!-- only need a height for layout 4 -->
+<div style="min-height: 200px"></div>
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- theme switcher -->
+  
+  <!-- / -->
+
+<!-- ############ LAYOUT END-->
+
+  </div>
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+            <script>
+                AOS.init({
+                    debounceDelay: 50,
+                    once: false,
+                    mirror: false
+                });
+</script>
+  <script src="../libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../libs/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../libs/jquery/underscore/underscore-min.js"></script>
+  <script src="../libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../libs/jquery/PACE/pace.min.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+
+  <script src="scripts/palette.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+
+  <script src="scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+ 
+
+        </div>
+    </form>
+</body>
+</html>
